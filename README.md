@@ -11,7 +11,7 @@
 ## 🎯 Etapas do Projeto
 
 ### 1. Dissertação sobre o Problema
-- [📄 Relatório Técnico Completo](docs/Relatório_Técnico_Impacto_do_Estilo_de_Vida_Digital_na_Saúde.pdf)
+- [📄 Relatório Técnico Completo](doc_relatorio/Relatório_Técnico_Impacto_do_Estilo_de_Vida_Digital_na_Saúde.pdf)
 - **Resumo**: A hiperconectividade contemporânea impacta diretamente a saúde mental. O estudo revelou que cada hora adicional de tela eleva a pontuação de depressão em 1.22 pontos (p<0.001).
 
 ### 2. Fontes de Dados
@@ -48,7 +48,7 @@
 - ⚖️ Homens têm vantagem sutil em foco e produtividade, mas a entrega funcional é quase idêntica entre gêneros
 
 ### 4. Relatório de Insights
-- [📄 Relatório de Insights](docs/Relatório_Técnico_Impacto_do_Estilo_de_Vida_Digital_na_Saúde.pdf)
+- [📄 Relatório de Insights](doc_relatorio/Relatório_Técnico_Impacto_do_Estilo_de_Vida_Digital_na_Saúde.pdf)
 - **Modelos de Regressão**:
   - **Modelo A (Depressão)**: R²=0.64, RMSE=3.43
   - **Modelo B (Sono)**: R²=0.50, RMSE=0.79
