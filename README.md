@@ -28,6 +28,7 @@
   - [01_limpeza_dados.py](scripts/01_limpeza_dados.py) - Limpeza, tradução e otimização de memória (redução de 64%)
   - [02_analise_exploratoria.py](scripts/02_analise_exploratoria.py) - Correlações (Pearson e Spearman) e estatísticas descritivas
   - [03_modelagem_regressao.py](scripts/03_modelagem_regressao.py) - Modelos preditivos de regressão linear
+      * *Gerenciamento de Métricas:* Este script  /03_modelagem... conta com uma rotina automatizada de logging. A cada execução, os resultados de performance ($R^2$, RMSE e MAE) de ambos os modelos são calculados e empilhados no arquivo `regression_models_history.json`, permitindo o rastreamento histórico de evolução dos experimentos através de tags de status personalizadas.
 
 **Bibliotecas utilizadas**:
 - Pandas, NumPy (ETL e manipulação)
