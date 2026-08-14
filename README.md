@@ -28,7 +28,7 @@
   - [01_limpeza_dados.py](scripts/01_limpeza_dados.py) - Limpeza, tradução e otimização de memória (redução de 64%)
   - [02_analise_exploratoria.py](scripts/02_analise_exploratoria.py) - Correlações (Pearson e Spearman) e estatísticas descritivas
   - [03_modelagem_regressao.py](scripts/03_modelagem_regressao.py) - Modelos preditivos de regressão linear
-      * *Gerenciamento de Métricas:* Este script  /03_modelagem... conta com uma rotina automatizada de logging. A cada execução, os resultados de performance ($R^2$, RMSE e MAE) de ambos os modelos são calculados e empilhados no arquivo `regression_models_history.json`, permitindo o rastreamento histórico de evolução dos experimentos através de tags de status personalizadas.
+      * *Gerenciamento de Métricas:* Este script /03_modelagem... conta com uma rotina automatizada de logging. A cada execução, os resultados de performance ($R^2$, RMSE e MAE) de ambos os modelos são calculados e empilhados no arquivo `regression_models_history.json`, permitindo o rastreamento histórico de evolução dos experimentos através de tags de status personalizadas.
 
 **Bibliotecas utilizadas**:
 - Pandas, NumPy (ETL e manipulação)
@@ -56,23 +56,24 @@
 
 ### 5. Dashboard no Looker Studio
 - **Link Interativo**: [Dashboard Completo](https://datastudio.google.com/reporting/4f7bf1e3-ae2f-4df8-8a49-95b6ab9ea15f)
-- **Página 1 - Hábitos Digitais**: [Clique aqui](https://datastudio.google.com/reporting/4f7bf1e3-ae2f-4df8-8a49-95b6ab9ea15f/page/l561F)
-  - KPIs: Tempo de Tela, Desbloqueios, Notificações, Alto Risco
-  - Correlações Positivas e Negativas
-  - Regressão: Tela × Depressão (r=0.81)
-  - Alto Risco por Região
-  - Qualidade do Sono por Dispositivo
-  - Indicadores por Região
 
-- **Página 2 - Socioeconômica**: [Clique aqui](https://datastudio.google.com/reporting/4f7bf1e3-ae2f-4df8-8a49-95b6ab9ea15f/page/p_gavhuyg04d)
-  - Renda × Risco (Barras Empilhadas)
-  - Educação × Risco (Barras Empilhadas)
-  - Renda × Depressão
-  - Educação × Depressão
-  - Função × Tela e Estresse
-  - Gênero × Estresse e Felicidade
-  - Gênero × Foco e Produtividade
+#### 📱 Página 1 - Hábitos Digitais & Indicadores de Saúde Mental
+- **Link Direto**: [Acessar Página 1](https://datastudio.google.com/reporting/4f7bf1e3-ae2f-4df8-8a49-95b6ab9ea15f/page/l561F)
+- **Conteúdo**: KPIs de Tempo de Tela, Desbloqueios e Notificações, matrizes de correlação, modelo de regressão (Tela × Depressão), taxa de alto risco por região e métricas executivas.
 
+<div align="center">
+  <img src="imagens/01_imagem_dash.png" alt="Dashboard Página 1 - Hábitos Digitais" width="100%">
+</div>
+
+<br>
+
+#### 📊 Página 2 - Análise Socioeconômica & Demográfica
+- **Link Direto**: [Acessar Página 2](https://datastudio.google.com/reporting/4f7bf1e3-ae2f-4df8-8a49-95b6ab9ea15f/page/p_gavhuyg04d)
+- **Conteúdo**: Análise de risco por nível de renda e escolaridade, dispersão de depressão por perfil socioeconômico, impacto ocupacional em tela/estresse e comparações de gênero em foco e felicidade.
+
+<div align="center">
+  <img src="imagens/02_imagem_dash .png" alt="Dashboard Página 2 - Socioeconômica" width="100%">
+</div>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -85,4 +86,17 @@
 | PyCharm | Desenvolvimento dos scripts |
 
 ## 📂 Estrutura do Repositório
+
+```text
+analise_dados_problema_real/
+│
+├── dados/                              # Datasets brutos e processados do projeto
+├── doc_relatorio/                      # Relatório técnico e documentação em PDF
+├── imagens/                            # Screenshots e previews dos Dashboards
+│   ├── 01_imagem_dash.png              # Print da Página 1 do Looker Studio
+│   └── 02_imagem_dash .png             # Print da Página 2 do Looker Studio
+├── resultados_graficos/                # Exportações das visualizações geradas pelos scripts
+├── scripts/                            # Pipeline de códigos Python (ETL, EDA e Regressão)
+├── regression_models_history.json      # Histórico automatizado de performance dos modelos
+└── README.md                           # Documentação completa do repositório
 
